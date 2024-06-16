@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Core" load_steps=3 format=3 uid="uid://d36c6k4and0a5"]
+
+[ext_resource type="Script" path="res://scripts/resources/cores/core.gd" id="1_k264u"]
+[ext_resource type="Resource" uid="uid://dgv6pch5c1qgy" path="res://resources/characters/human.tres" id="1_pgwxw"]
+
+[resource]
+script = ExtResource("1_k264u")
+data = ExtResource("1_pgwxw")

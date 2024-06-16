@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DebuffMove" load_steps=4 format=3 uid="uid://24vvh4efww8r"]
+
+[ext_resource type="Script" path="res://scripts/resources/status_effects/status_effect.gd" id="1_l4idv"]
+[ext_resource type="Script" path="res://scripts/resources/moves/debuff_move.gd" id="1_tt0bh"]
+
+[sub_resource type="Resource" id="Resource_rki6o"]
+script = ExtResource("1_l4idv")
+name = "Disorientation"
+damage_boost = 0
+damage_reduction = -20
+speed_boost = 0
+speed_reduction = -10
+health_regeneration = 0
+special_damage_boost = 0
+special_damage_reduction = 0
+max_stack = 1
+
+[resource]
+script = ExtResource("1_tt0bh")
+effect = SubResource("Resource_rki6o")
+duration = 4
+name = "Scream"
+description = "Make their ears bleed."
+chance = 80
+max_action_points = 10

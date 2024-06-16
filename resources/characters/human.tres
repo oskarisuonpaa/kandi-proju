@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://dgv6pch5c1qgy"]
+
+[ext_resource type="Script" path="res://scripts/resources/characters/character.gd" id="1_85rpl"]
+[ext_resource type="Resource" uid="uid://bplsb82fwbpti" path="res://resources/moves/kick.tres" id="1_e66qk"]
+[ext_resource type="Resource" uid="uid://dxjxj8rp1jwvg" path="res://resources/moves/punch.tres" id="2_s8fcj"]
+[ext_resource type="Resource" uid="uid://24vvh4efww8r" path="res://resources/moves/scream.tres" id="3_wy5ak"]
+
+[resource]
+script = ExtResource("1_85rpl")
+name = "Human"
+level = 1
+max_health = 100
+max_special_points = 10
+attack = 10
+special_attack = 10
+defense = 10
+special_defense = 10
+speed = 10
+spells = {}
+moves = [ExtResource("1_e66qk"), ExtResource("2_s8fcj"), ExtResource("3_wy5ak")]

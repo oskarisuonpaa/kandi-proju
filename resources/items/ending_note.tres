@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="NoteItem" load_steps=2 format=3 uid="uid://sg4bo1tjiihw"]
+
+[ext_resource type="Script" path="res://scripts/resources/items/note_item.gd" id="1_5oyek"]
+
+[resource]
+script = ExtResource("1_5oyek")
+content = "Thank you for playing the demo of Legacy of Chimera, you may continue playing if you want to explore more, try out the available commands shown by <help>, or you can type <quit> to end the game.
+
+P.S. Have you seen a Crystal Muncher yet? If you wait inside the upper are of the crystal cave, one might appear."
+name = "old note"
+description = "An old note."
+take_description_override = "You took the note. You can read the note with <use> command."

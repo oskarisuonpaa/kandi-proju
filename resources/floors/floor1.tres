@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Floor" load_steps=8 format=3 uid="uid://cfr15w676kibx"]
+
+[ext_resource type="Resource" uid="uid://cvxupiobruf1o" path="res://resources/locations/1_shrine.tres" id="1_kuurl"]
+[ext_resource type="Script" path="res://scripts/resources/floor.gd" id="1_samu0"]
+[ext_resource type="Resource" uid="uid://biv0j3ur3n4k4" path="res://resources/locations/1_shrine_entrance.tres" id="2_u032r"]
+[ext_resource type="Resource" uid="uid://c5lqv1v5lgp85" path="res://resources/locations/1_lower_crystal_cave.tres" id="2_wlwqb"]
+[ext_resource type="Resource" uid="uid://ds86mxr71ehwb" path="res://resources/locations/1_feeding_chamber.tres" id="4_k7dcn"]
+[ext_resource type="Resource" uid="uid://0vos7rtl8se5" path="res://resources/locations/1_hidden_room.tres" id="5_d4qha"]
+[ext_resource type="Resource" uid="uid://b2wfgdfwm0grk" path="res://resources/locations/1_upper_crystal_cave.tres" id="6_scy0x"]
+
+[resource]
+script = ExtResource("1_samu0")
+locations = [ExtResource("1_kuurl"), ExtResource("2_u032r"), ExtResource("4_k7dcn"), ExtResource("5_d4qha"), ExtResource("2_wlwqb"), ExtResource("6_scy0x")]
+entry_location = ExtResource("1_kuurl")
+exit_location = ExtResource("2_wlwqb")

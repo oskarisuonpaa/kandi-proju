@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CombatEvent" load_steps=3 format=3 uid="uid://bf4q3o7rk76d2"]
+
+[ext_resource type="Script" path="res://scripts/resources/events/combat_event.gd" id="1_sd2xd"]
+[ext_resource type="Resource" uid="uid://djarl3dodpql2" path="res://resources/characters/crystal_muncher.tres" id="1_suutn"]
+
+[resource]
+script = ExtResource("1_sd2xd")
+enemy = ExtResource("1_suutn")
+can_run = true
+steps = []

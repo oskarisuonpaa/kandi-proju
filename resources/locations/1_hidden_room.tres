@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Location" load_steps=3 format=3 uid="uid://0vos7rtl8se5"]
+
+[ext_resource type="Script" path="res://scripts/resources/location.gd" id="1_5w5in"]
+[ext_resource type="Resource" uid="uid://sg4bo1tjiihw" path="res://resources/items/ending_note.tres" id="1_djcrq"]
+
+[resource]
+script = ExtResource("1_5w5in")
+name = "Hidden Room"
+description = "A secred room hidden behind the waterfall. You see a <corpse> here."
+connections = {}
+environment = []
+hidden_items = []
+items = [ExtResource("1_djcrq")]
+events = {}

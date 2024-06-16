@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Location" load_steps=5 format=3 uid="uid://ds86mxr71ehwb"]
+
+[ext_resource type="Script" path="res://scripts/resources/location.gd" id="1_ms1yg"]
+[ext_resource type="Resource" uid="uid://dtys6h05ksmme" path="res://resources/environmental_elements/1_3_mound.tres" id="2_3p1rc"]
+[ext_resource type="Resource" uid="uid://dwcodjipvlphe" path="res://resources/environmental_elements/1_3_pendant.tres" id="3_5f187"]
+[ext_resource type="Resource" uid="uid://dygee617tqsl7" path="res://resources/environmental_elements/1_2_passage.tres" id="3_a3p0j"]
+
+[resource]
+script = ExtResource("1_ms1yg")
+name = "Feeding Chamber"
+description = "The stagnant air smells of rotten flesh, carrying over from a <mound> of mummified corpses in the center of the chamber. There is a <passage> leading back to the shrine."
+connections = {}
+environment = [ExtResource("2_3p1rc"), ExtResource("3_5f187"), ExtResource("3_a3p0j")]
+hidden_items = []
+items = []
+events = {}

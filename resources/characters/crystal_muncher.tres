@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=8 format=3 uid="uid://djarl3dodpql2"]
+
+[ext_resource type="Script" path="res://scripts/resources/characters/enemy.gd" id="1_0b2l0"]
+[ext_resource type="Resource" uid="uid://bidxyendyngcy" path="res://resources/moves/stomp.tres" id="1_53ysb"]
+[ext_resource type="Script" path="res://scripts/resources/status_effects/status_effect.gd" id="2_biuyn"]
+[ext_resource type="Script" path="res://scripts/resources/moves/buff_move.gd" id="3_wrryy"]
+[ext_resource type="Resource" uid="uid://dhsk78c0cjavl" path="res://resources/spells/crystal_barrage.tres" id="5_ilek8"]
+
+[sub_resource type="Resource" id="Resource_6lqap"]
+script = ExtResource("2_biuyn")
+name = "Harden"
+damage_boost = 0
+damage_reduction = 2
+speed_boost = 0
+speed_reduction = 2
+health_regeneration = 0
+special_damage_boost = 0
+special_damage_reduction = 2
+max_stack = 1
+
+[sub_resource type="Resource" id="Resource_h8gma"]
+script = ExtResource("3_wrryy")
+effect = SubResource("Resource_6lqap")
+duration = 3
+name = "Harden"
+description = "Hardens body."
+chance = 50
+max_action_points = 5
+
+[resource]
+script = ExtResource("1_0b2l0")
+experience_drop = 10
+drop_table = {}
+spells = [ExtResource("5_ilek8")]
+name = "Crystal Muncher"
+level = 1
+max_health = 100
+max_special_points = 10
+attack = 10
+special_attack = 12
+defense = 6
+special_defense = 6
+speed = 6
+moves = [ExtResource("1_53ysb"), SubResource("Resource_h8gma")]

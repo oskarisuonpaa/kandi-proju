@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Location" load_steps=7 format=3 uid="uid://c5lqv1v5lgp85"]
+
+[ext_resource type="Script" path="res://scripts/resources/location.gd" id="1_8l6nb"]
+[ext_resource type="Resource" uid="uid://b2wfgdfwm0grk" path="res://resources/locations/1_upper_crystal_cave.tres" id="1_jtfwc"]
+[ext_resource type="Resource" uid="uid://0vos7rtl8se5" path="res://resources/locations/1_hidden_room.tres" id="2_eddxy"]
+[ext_resource type="Resource" uid="uid://dmugqu8l21he4" path="res://resources/environmental_elements/1_4_crystal.tres" id="3_jmg6c"]
+[ext_resource type="Resource" uid="uid://c48ixieibdsv5" path="res://resources/environmental_elements/1_4_river.tres" id="4_6qhuq"]
+[ext_resource type="Resource" uid="uid://btpvoht4v2ymq" path="res://resources/environmental_elements/1_4_waterfall.tres" id="5_8xk6x"]
+
+[resource]
+script = ExtResource("1_8l6nb")
+name = "Lower Crystal Cave"
+description = "Lower part of a larger cave. You see stone pillars reaching rising from the ground. There are luminous <crystals> scattered around, glowing in a blue hue. You see a small <river> fed by a <waterfall>. Above you, you see a higher area."
+connections = {
+"up": ExtResource("1_jtfwc"),
+"waterfall": ExtResource("2_eddxy")
+}
+environment = [ExtResource("3_jmg6c"), ExtResource("4_6qhuq"), ExtResource("5_8xk6x")]
+hidden_items = []
+items = []
+events = {}

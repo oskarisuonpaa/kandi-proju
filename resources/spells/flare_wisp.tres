@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Spell" load_steps=2 format=3 uid="uid://bfjj8xh35rey"]
+
+[ext_resource type="Script" path="res://scripts/resources/spells/spell.gd" id="1_hh8qg"]
+
+[resource]
+script = ExtResource("1_hh8qg")
+name = "Flare Wisp"
+description = "Can be used to light up areas or for offense during combat."

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AggressiveMove" load_steps=2 format=3 uid="uid://bplsb82fwbpti"]
+
+[ext_resource type="Script" path="res://scripts/resources/moves/aggressive_move.gd" id="1_3muj3"]
+
+[resource]
+script = ExtResource("1_3muj3")
+damage = 10
+critical_chance = 10
+critical_multiplier = 2
+repeat = 1
+name = "Kick"
+description = "Self explanatory."
+chance = 100
+max_action_points = 20

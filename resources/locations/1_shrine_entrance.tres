@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Location" load_steps=7 format=3 uid="uid://biv0j3ur3n4k4"]
+
+[ext_resource type="Resource" uid="uid://ds86mxr71ehwb" path="res://resources/locations/1_feeding_chamber.tres" id="1_sk3ll"]
+[ext_resource type="Script" path="res://scripts/resources/location.gd" id="2_3aoc5"]
+[ext_resource type="Resource" uid="uid://dygee617tqsl7" path="res://resources/environmental_elements/1_2_passage.tres" id="2_sebvj"]
+[ext_resource type="Resource" uid="uid://domltx7dknyjs" path="res://resources/environmental_elements/1_1_pond.tres" id="3_fn4j8"]
+[ext_resource type="Resource" uid="uid://vql8xto2vune" path="res://resources/environmental_elements/1_1_path.tres" id="4_dsn2s"]
+[ext_resource type="Resource" uid="uid://dv1j740eq5ib5" path="res://resources/items/preserved_meat.tres" id="5_vlggx"]
+
+[resource]
+script = ExtResource("2_3aoc5")
+name = "Shrine Entrance"
+description = "Entrance to the shrine chamber, on the shore of the <pond>, connected to the shrine with a <path>.  There is a <passage> here."
+connections = {
+"passage": ExtResource("1_sk3ll")
+}
+environment = [ExtResource("2_sebvj"), ExtResource("3_fn4j8"), ExtResource("4_dsn2s")]
+hidden_items = []
+items = [ExtResource("5_vlggx")]
+events = {}

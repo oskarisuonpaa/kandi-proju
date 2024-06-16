@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DebuffMove" load_steps=4 format=3 uid="uid://clsdsn5ovmx01"]
+
+[ext_resource type="Script" path="res://scripts/resources/status_effects/status_effect.gd" id="1_f6iix"]
+[ext_resource type="Script" path="res://scripts/resources/moves/debuff_move.gd" id="2_qwt7n"]
+
+[sub_resource type="Resource" id="Resource_yt6vq"]
+script = ExtResource("1_f6iix")
+name = "Blood Clot"
+damage_boost = 0
+damage_reduction = 0
+speed_boost = 0
+speed_reduction = 0
+health_regeneration = -10
+special_damage_boost = 0
+special_damage_reduction = 0
+max_stack = 1
+
+[resource]
+script = ExtResource("2_qwt7n")
+effect = SubResource("Resource_yt6vq")
+duration = 5
+name = "Blood Clot"
+description = "Description of the move."
+chance = 75
+max_action_points = 10

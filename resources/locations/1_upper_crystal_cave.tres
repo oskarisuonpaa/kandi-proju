@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Location" load_steps=3 format=3 uid="uid://b2wfgdfwm0grk"]
+
+[ext_resource type="Resource" uid="uid://bf4q3o7rk76d2" path="res://resources/events/1_crystal_muncher.tres" id="1_6vwpa"]
+[ext_resource type="Script" path="res://scripts/resources/location.gd" id="1_bbkvb"]
+
+[resource]
+script = ExtResource("1_bbkvb")
+name = "Upper Crystal Cave"
+description = "Its the same as below, nothing interesting here. But you can hear odd rumbling, maybe you could <wait> and see if something happens."
+connections = {}
+environment = []
+hidden_items = []
+items = []
+events = {
+"ON_WAIT": [{
+"chance": 0.5,
+"event": ExtResource("1_6vwpa")
+}]
+}

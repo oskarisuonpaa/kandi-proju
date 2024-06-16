@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnvironmentalElement" load_steps=2 format=3 uid="uid://btpvoht4v2ymq"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/environmental_element.gd" id="1_v2kgr"]
+
+[resource]
+script = ExtResource("1_v2kgr")
+name = "waterfall"
+description = "The waterfall feeds to the river. You can't see the start of it, but you can see that there is no wall behind it."

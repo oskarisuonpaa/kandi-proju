@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnvironmentalElement" load_steps=2 format=3 uid="uid://vql8xto2vune"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/environmental_element.gd" id="1_wio2d"]
+
+[resource]
+script = ExtResource("1_wio2d")
+name = "path"
+description = "A path made of geometric stones between the shrine and the entrance."

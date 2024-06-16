@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InteractableEnvironmentElement" load_steps=3 format=3 uid="uid://dwcodjipvlphe"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/interactable_environmental_element.gd" id="1_fog50"]
+[ext_resource type="Resource" uid="uid://cefdibqw0rgia" path="res://resources/events/1_sanguine_slime.tres" id="1_w1od2"]
+
+[resource]
+script = ExtResource("1_fog50")
+interaction_event = ExtResource("1_w1od2")
+name = "pendant"
+description = "An old golden pendant."

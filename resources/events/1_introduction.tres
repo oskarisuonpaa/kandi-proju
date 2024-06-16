@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="CutsceneEvent" load_steps=2 format=3 uid="uid://ce1cljvhejlf8"]
+
+[ext_resource type="Script" path="res://scripts/resources/events/cutscene_event.gd" id="1_087mx"]
+
+[resource]
+script = ExtResource("1_087mx")
+paths = {
+"accept": [{
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "Thank you. I'm sorry for the burden I put on you and not being able to join you, but I hope that my power will help you in your journey. Now, let me give you my power.",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "Oh, before we begin, I should tell you that you have to find your own way out of here. And as a gift, I will teach you my first and only spell, [Flare Wisp]. It is a simple spell with many uses. Use it well.",
+"type": "dialogue"
+}, {
+"gift": "res://resources/spells/flare_wisp.tres",
+"type": "gift"
+}, {
+"delay": 2.0,
+"text": "You feel a surge of energy envelop you. It starts as a warmth in your chest, then spreads throughout your body. As the energy spreads, it begins to burn you with a searing pain. You scream in agony. It feels like your soul is being ripped from your body. You begin to lose consciousness...",
+"type": "narration"
+}, {
+"delay": 2.0,
+"text": "...After a while, you wake up with a headache. You look at Kaelix's statue and see the orb is now shattered. He is gone. Feeling something out of place, you move your hand across your chest and feel something, an orb.",
+"type": "narration"
+}, {
+"delay": 2.0,
+"text": "Apart from the strange orb, you don't feel any different. Since Kaelix is now gone, and you don't know where you are, you think you should use some time to <look> around.",
+"type": "narration"
+}],
+"refuse": [{
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "I understand. It's too much to ask you to fight for me. Allow me to send you home. Farewell.",
+"type": "dialogue"
+}, {
+"text": "You are enveloped in a blinding light. You feel a sense of weightlessness. Suddenly, you hear a bang and a familiar voice calling your name.",
+"type": "narration"
+}, {
+"delay": 2.0,
+"speaker": "???",
+"text": "Am I really that boring that you fell asleep in my class? We will be discussing this after class. Now pay attention!",
+"type": "dialogue"
+}, {
+"text": "You open your eyes to see your teacher standing in front of you, looking at you with a stern expression. You realize that you are back in your classroom. You must have fallen asleep during the lecture.",
+"type": "narration"
+}, {
+"text": "You look around and see your classmates looking at you with amusement. You feel your face flush with embarrassment. You try to listen to the lecture, but you can't shake off the feeling that what you experienced was real.",
+"type": "narration"
+}, {
+"text": "Daydreamer",
+"type": "end",
+"variant": "bad"
+}]
+}
+steps = [{
+"text": "You wake up to the rhythmic sound of water dripping. You are in an unfamiliar place, laying on a cold, hard surface. Maybe you should try to <stand> up.",
+"type": "narration"
+}, {
+"commands": [{
+"args": [],
+"command": "stand",
+"response": "You struggle to get off the slab, but you manage to stand up. You see a candle-lit <statue> in front of you. Curious, you wonder if you should <look> at it."
+}],
+"type": "input",
+"wrong_input": "Maybe you should try to <stand> up."
+}, {
+"commands": [{
+"args": ["statue"],
+"command": "look",
+"response": "You look at the statue. It depicts a figure in a robe, their face having been eroded away. You notice a glimmering <orb> in the chest of the statue. It calls for you to <interact> with it."
+}],
+"type": "input",
+"wrong_input": "Maybe you should try to <look> at the <statue>."
+}, {
+"commands": [{
+"args": ["orb"],
+"command": "interact",
+"response": "You reach out to the orb, and as you touch it, you feel a surge of energy envelop you. You hear a masculine voice in your head."
+}],
+"type": "input",
+"wrong_input": "Maybe you should try to <interact> with the <orb>."
+}, {
+"delay": 2.0,
+"speaker": "???",
+"text": "Hahahaa... It worked! The summoning worked! Now I can finally join my family!",
+"type": "dialogue"
+}, {
+"delay": 1.0,
+"text": "...",
+"type": "narration"
+}, {
+"delay": 2.0,
+"speaker": "???",
+"text": "Oh, sorry. I forgot to introduce myself. I am one of the many deities of this world. You can call me Kaelix.",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "You must be full of questions. But first, let me give you some context.",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "You are in a world called Terra. It is a world of magic and wonder, but also of danger and darkness, especially now since the Mad One took over...",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "The Mad One is a powerful deity with incredible power who took over Terra and plunged it into chaos. We, the deities, tried to stop him, but he was too powerful.",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "Our power was drained. Some of us were killed, others went into hiding. I was one of the lucky ones. I was defeated before the Mad One became what he is now.",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "The orb you see is what is left of me. A monster's version of a soul, a core. But that is enough about me. Since the Mad One took over, he gave the deities who survived, in a way or another, a chance to fight back.",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "For each of us, he gave a way to summon champions, like you, to fight for us as we cannot do it ourselves. Not anymore. That is where you come in.",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "I would like to ask you to become my champion by your own choice. I can give you my power, or you can refuse and go back to your world. Either way will exhaust my remaining power, and be fine with me since I will finally be able to join my family.",
+"type": "dialogue"
+}, {
+"delay": 2.0,
+"speaker": "Kaelix",
+"text": "Oh, right. If you care about it. My core is a special one. I was once a human, and had a soul. But after becoming a monster, it became a core. Normally a core would be a simple crystal, since monsters don't have souls, but mine is different. Once it shatters, my soul is free to enter afterlife.",
+"type": "dialogue"
+}, {
+"speaker": "Kaelix",
+"text": "What do you say? Will you <accept> my power and become my champion, or will you <refuse> and go back to your world?",
+"type": "dialogue"
+}, {
+"choices": [{
+"command": "accept",
+"path": "accept",
+"text": "Accept"
+}, {
+"command": "refuse",
+"path": "refuse",
+"text": "Refuse"
+}],
+"type": "choice",
+"wrong_input": "It's a simple choice. Will you <accept> or <refuse>?"
+}]

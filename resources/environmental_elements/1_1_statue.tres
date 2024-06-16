@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnvironmentalElement" load_steps=2 format=3 uid="uid://cppq2v2s12fqv"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/environmental_element.gd" id="1_24l4p"]
+
+[resource]
+script = ExtResource("1_24l4p")
+name = "statue"
+description = "Kaelix's statue has worn down over the years. His face has eroded away from the tripping water. The orb in his chest has cracked and shows no signs of life."

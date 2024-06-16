@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnvironmentalElement" load_steps=2 format=3 uid="uid://dmugqu8l21he4"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/environmental_element.gd" id="1_bjd55"]
+
+[resource]
+script = ExtResource("1_bjd55")
+name = "crystal"
+description = "A luminous crystal, glowing in a blue hue. Deep inside, you see an odd shape."

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnvironmentalElement" load_steps=2 format=3 uid="uid://domltx7dknyjs"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/environmental_element.gd" id="1_2cjy6"]
+
+[resource]
+script = ExtResource("1_2cjy6")
+name = "pond"
+description = "A knee-high pond surrounding the shrine. You see glimpses of fish swimming in it."

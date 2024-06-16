@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Location" load_steps=9 format=3 uid="uid://cvxupiobruf1o"]
+
+[ext_resource type="Resource" uid="uid://biv0j3ur3n4k4" path="res://resources/locations/1_shrine_entrance.tres" id="1_3cs4t"]
+[ext_resource type="Resource" uid="uid://domltx7dknyjs" path="res://resources/environmental_elements/1_1_pond.tres" id="2_hjcey"]
+[ext_resource type="Resource" uid="uid://vql8xto2vune" path="res://resources/environmental_elements/1_1_path.tres" id="3_tdopr"]
+[ext_resource type="Resource" uid="uid://danlykntydfiq" path="res://resources/environmental_elements/1_1_slab.tres" id="4_qfc3u"]
+[ext_resource type="Resource" uid="uid://dotm04chcs0u4" path="res://resources/environmental_elements/1_1_stalactite.tres" id="5_r3icy"]
+[ext_resource type="Resource" uid="uid://cppq2v2s12fqv" path="res://resources/environmental_elements/1_1_statue.tres" id="6_ce0nq"]
+[ext_resource type="Resource" uid="uid://ce1cljvhejlf8" path="res://resources/events/1_introduction.tres" id="7_gd4a4"]
+[ext_resource type="Script" path="res://scripts/resources/location.gd" id="8_haeg7"]
+
+[resource]
+script = ExtResource("8_haeg7")
+name = "Shrine"
+description = "Shrine dedicated to Kaelix, his candle-lit <statue> standing next to a <slab>. Above his statue, hangs a <stalactite>. The shrine is surrounded by a <pond> with a <path> crossing it."
+connections = {
+"path": ExtResource("1_3cs4t")
+}
+environment = [ExtResource("3_tdopr"), ExtResource("2_hjcey"), ExtResource("4_qfc3u"), ExtResource("5_r3icy"), ExtResource("6_ce0nq")]
+hidden_items = []
+items = []
+events = {
+"ON_ENTER": ExtResource("7_gd4a4")
+}

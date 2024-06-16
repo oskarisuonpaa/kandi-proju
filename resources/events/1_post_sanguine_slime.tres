@@ -1,0 +1,164 @@
+[gd_resource type="Resource" script_class="CutsceneEvent" load_steps=2 format=3 uid="uid://xi8yt1ui8ksm"]
+
+[ext_resource type="Script" path="res://scripts/resources/events/cutscene_event.gd" id="1_pr2fj"]
+
+[resource]
+script = ExtResource("1_pr2fj")
+paths = {
+"eat": [{
+"delay": 3.0,
+"text": "You decided to eat the core. As you ate it, you felt the same sensation as when you first gained your core, but much more tolerable.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You felt your body being repaired, your wounds closing, and your strength returning.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Yet, your weak body couldn't handle the sudden influx of power, and you began to fall unconscious.",
+"type": "narration"
+}, {
+"delay": 4.0,
+"text": "The last thing you noticed before falling unconscious was that your body began to change...",
+"type": "narration"
+}, {
+"delay": 2.0,
+"text": "*Splat*",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "When you came to, you noticed something off about your body. It was no longer human, instead it was a metallic, gelatinous body. You had transformed into a slime.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Shocked by the sudden change, you decided to take a moment to calm your nerves. The transformation has to be connected to your power, but how?",
+"type": "narration"
+}, {
+"text": "Taking a deep 'breath', you tried to figure out how to control your powers, and how to return to your human form. Could there be a way to <transform> back to <human>?",
+"type": "narration"
+}, {
+"commands": [{
+"args": ["human"],
+"command": "transform",
+"response": "Focusing your mind on your core, you began to sense two images, one of your human form, and one of your slime form. You poured all of your will to return to your human form."
+}],
+"type": "input",
+"wrong_input": "You should try to <transform> back to <human>."
+}, {
+"delay": 3.0,
+"text": "You felt your body begin to change, your metallic body began to melt away, and your human form returned.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You were relieved to be back in your human form, but you couldn't shake the feeling that your powers have much more to offer.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Deciding to take a moment to rest, you sat down on the ground, and began to think about your next move.",
+"type": "narration"
+}, {
+"gift": "res://resources/cores/sanguine_slime.tres",
+"type": "gift"
+}, {
+"location": "res://resources/locations/1_lower_crystal_cave.tres",
+"type": "location_change"
+}, {
+"type": "heal"
+}],
+"throw": [{
+"delay": 3.0,
+"text": "You decided to throw the core away. As you threw it, you felt a sense of relief, but also a sense of loss.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You felt your body begin to weaken, your strength leaving you.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You tried to fight the feeling, but your body was too weak. You fell unconscious.",
+"type": "narration"
+}, {
+"text": "L'appel du vide",
+"type": "end",
+"variant": "bad"
+}]
+}
+steps = [{
+"delay": 3.0,
+"text": "Your body badly hurt, you struggle to fight the slime monster.",
+"type": "narration"
+}, {
+"text": "You are too weak to fight any longer, the slime monster is about to finish you off. You have to <run>.",
+"type": "narration"
+}, {
+"commands": [{
+"args": [],
+"command": "run",
+"response": "You ran away from the slime monster. Unfortunately, you ended in a dead end on the other side of the corpse mound."
+}],
+"type": "input",
+"wrong_input": "Unless you want to die, <run>!"
+}, {
+"delay": 3.0,
+"text": "You are cornered, the slime monster blocking your way back to the safety of the shrine. Behind you is a large hole leading down deeper into the cave, and fall to certain death.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Struggling between the choice of the two evils, the slime monster is getting closer.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Not wanting to waste your chance to be something more than a struggling student, you decide to stand your ground for one last vain attempt at fighting the slime monster.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Before you knew, the slime monster sprung from the ground, after forming a spring made of its weird, almost metallic body.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You unconsciously closed your eyes and held your hands to stop it.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You felt something small, hard and round get caught by your hands as warm, gelatinous, and metal-tasting liquid splashed all over your face.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Opening your eyes, you saw the slime monster having lost its form, only a puddle of liquid metal left on the ground, and your body.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You looked at your hands, and saw the object, a core, just like yours, but swirling with crimson colors.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You couldn't believe it, you had defeated the slime monster. Unfortunately, your body had taken a toll, you had lost too much blood.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "You began to feel weak and dizzy, slowly taking steps backwards, towards the hole.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Reaching the edge of the hole, you lost your balance and fell.",
+"type": "narration"
+}, {
+"delay": 3.0,
+"text": "Wind rushed past you as you fell deeper into the abyss. You began to feel an unrelenting urge to eat the core you had taken from the slime monster.",
+"type": "narration"
+}, {
+"text": "Holding the core close to your mouth, you struggled with the decision to eat it or not. Will you <eat> the core? Or will you <throw> it away?",
+"type": "narration"
+}, {
+"choices": [{
+"command": "eat",
+"path": "eat",
+"text": "Eat"
+}, {
+"command": "throw",
+"path": "throw",
+"text": "Throw"
+}],
+"type": "choice",
+"wrong_input": "You have to make a choice, <eat> or <throw>."
+}]

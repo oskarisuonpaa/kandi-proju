@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnvironmentalElement" load_steps=2 format=3 uid="uid://dtys6h05ksmme"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/environmental_element.gd" id="1_e3vxy"]
+
+[resource]
+script = ExtResource("1_e3vxy")
+name = "mound"
+description = "A horryfying mound made of mummified corpses. As you reluctantly look around the corpses, you notice something glimmer, a <pendant>."

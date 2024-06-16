@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CombatEvent" load_steps=7 format=3 uid="uid://cefdibqw0rgia"]
+
+[ext_resource type="Resource" uid="uid://2sbtpvi6y0ln" path="res://resources/moves/blood_cleave.tres" id="1_a1b2s"]
+[ext_resource type="Script" path="res://scripts/resources/events/combat_event.gd" id="1_vva86"]
+[ext_resource type="Resource" uid="uid://xi8yt1ui8ksm" path="res://resources/events/1_post_sanguine_slime.tres" id="2_2t38t"]
+[ext_resource type="Resource" uid="uid://clsdsn5ovmx01" path="res://resources/moves/blood_clot.tres" id="2_e730c"]
+[ext_resource type="Script" path="res://scripts/resources/characters/enemy.gd" id="3_iwfe8"]
+
+[sub_resource type="Resource" id="Resource_yty1g"]
+script = ExtResource("3_iwfe8")
+experience_drop = 100
+drop_table = {}
+name = "Sanguine Slime"
+level = 5
+max_health = 110
+max_special_points = 6
+attack = 10
+special_attack = 6
+defense = 14
+special_defense = 14
+speed = 8
+spells = {}
+moves = [ExtResource("1_a1b2s"), ExtResource("2_e730c")]
+
+[resource]
+script = ExtResource("1_vva86")
+enemy = SubResource("Resource_yty1g")
+on_player_death = ExtResource("2_2t38t")
+can_run = false
+steps = []

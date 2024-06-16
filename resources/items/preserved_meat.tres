@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="HealingItem" load_steps=2 format=3 uid="uid://dv1j740eq5ib5"]
+
+[ext_resource type="Script" path="res://scripts/resources/items/healing_item.gd" id="1_0u7yu"]
+
+[resource]
+script = ExtResource("1_0u7yu")
+amount = 10
+name = "preserved meat"
+description = "A food source to stave off hunger."
+take_description_override = "You took the preserved meat. You can <look> at your <self> to see your current status."

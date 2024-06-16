@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnvironmentalElement" load_steps=2 format=3 uid="uid://dotm04chcs0u4"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/environmental_element.gd" id="1_q8tb3"]
+
+[resource]
+script = ExtResource("1_q8tb3")
+name = "stalactite"
+description = "A large stalactite looming over Kaelix's statue. It reminds you of the Sword of Damocles."

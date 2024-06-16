@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="EnvironmentalElement" load_steps=2 format=3 uid="uid://dygee617tqsl7"]
+
+[ext_resource type="Script" path="res://scripts/resources/environmental_elements/environmental_element.gd" id="1_5naxh"]
+
+[resource]
+script = ExtResource("1_5naxh")
+name = "passage"
+description = "A dark twisty passage."

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://bvkrq3mgx7ce7"]
+
+[ext_resource type="Resource" uid="uid://2sbtpvi6y0ln" path="res://resources/moves/blood_cleave.tres" id="1_jjvfe"]
+[ext_resource type="Resource" uid="uid://clsdsn5ovmx01" path="res://resources/moves/blood_clot.tres" id="2_41t2o"]
+[ext_resource type="Script" path="res://scripts/resources/characters/enemy.gd" id="3_bnp6t"]
+
+[resource]
+script = ExtResource("3_bnp6t")
+experience_drop = 100
+drop_table = {}
+name = "Sanguine Slime"
+level = 1
+max_health = 110
+max_special_points = 6
+attack = 10
+special_attack = 6
+defense = 14
+special_defense = 14
+speed = 8
+spells = {}
+moves = [ExtResource("1_jjvfe"), ExtResource("2_41t2o")]
